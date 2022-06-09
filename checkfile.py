@@ -43,8 +43,8 @@ def upload(id, path):
 def main():
     speed_download = download(server_list[0],server_list[1])
     speed_upload = upload(server_list[0],server_list[2])
-    print("Download speed:", speed_download)
-    print("Upload speed:", speed_upload)
+    print("Download speed:", speed_download,"MB")
+    print("Upload speed:", speed_upload,"MB")
 
 
 if __name__ == '__main__':
