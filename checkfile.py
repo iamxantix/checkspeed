@@ -2,8 +2,8 @@ import os
 import time
 import requests
 server_list = [ 38307,
-                'http://speedtest.astana.telecom.kz:8080/speedtest/random5000x5000.jpg',
-                'http://speedtest.astana.telecom.kz:8080/speedtest/upload.php']
+                'http://speedtest.astana.telecom.kz:8080/speedtest/random7000x7000.jpg',
+                "http://speedtest.astana.telecom.kz:8080/speedtest/upload.php"]
 
 def download(id, path):
     start = time.time()
@@ -43,8 +43,8 @@ def upload(id, path):
 def main():
     speed_download = download(server_list[0],server_list[1])
     speed_upload = upload(server_list[0],server_list[2])
-    print("Download speed:", speed_download,"MB")
-    print("Upload speed:", speed_upload,"MB")
+    print("Download speed:", speed_download,"Mbit/s")
+    print("Upload speed:", speed_upload,"Mbit/s")
 
 
 if __name__ == '__main__':
